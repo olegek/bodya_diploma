@@ -5,7 +5,7 @@
 //  Created by Hedgehog on 12.06.14.
 //  Copyright (c) 2014 Work. All rights reserved.
 //
-
+#define IS_IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 #import "AppDelegate.h"
 #import "MainViewController.h"
 
@@ -22,6 +22,9 @@
     [nav pushViewController:main animated:YES];
     [self.window makeKeyAndVisible];
     return YES;
+
+
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

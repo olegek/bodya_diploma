@@ -34,6 +34,10 @@
     return YES;
 }
 
+-(UIStatusBarStyle) preferredStatusBarStyle {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    return UIStatusBarStyleLightContent;
+}
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
@@ -42,8 +46,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setTitle:@"Bodya pro"];
+    [self setTitle:@"Hash app"];
     self.inputText.delegate = self;
+    
+    
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbarBG"] forBarMetrics:UIBarMetricsDefault ];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    NSDictionary *navbarTitleProperties = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"AvenirNext-DemiBold" size:17.0f], NSFontAttributeName, [UIColor whiteColor], NSForegroundColorAttributeName, nil];
+    [[UINavigationBar appearance] setTitleTextAttributes: navbarTitleProperties];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -58,6 +70,7 @@
     [self.view endEditing:YES];
     NSString *md2 = [self.inputText.text stringByHashingWithMD2UsingEncoding:NSUTF8StringEncoding];
     ResultViewController *res = [[ResultViewController alloc] initWithResult:md2];
+    res.hashMethod = @"MD2";
     [self.navigationController pushViewController:res animated:YES];
 }
 
@@ -66,6 +79,8 @@
     [self.view endEditing:YES];
     NSString *md4 = [self.inputText.text stringByHashingWithMD4UsingEncoding:NSUTF8StringEncoding];
     ResultViewController *res = [[ResultViewController alloc] initWithResult:md4];
+    res.hashMethod = @"MD4";
+
     [self.navigationController pushViewController:res animated:YES];
 }
 
@@ -74,6 +89,7 @@
     NSString *input = self.inputText.text;
     [self.view endEditing:YES];
     ResultViewController *res = [[ResultViewController alloc] initWithResult:[input stringByHashingWithMD5UsingEncoding:NSUTF8StringEncoding]];
+    res.hashMethod = @"MD5";
     [self.navigationController pushViewController:res animated:YES];
 }
 
@@ -82,6 +98,7 @@
     NSString *input = self.inputText.text;
     [self.view endEditing:YES];
     ResultViewController *res = [[ResultViewController alloc] initWithResult:[input stringByHashingWithSHA1UsingEncoding:NSUTF8StringEncoding]];
+    res.hashMethod = @"SHA1";
     [self.navigationController pushViewController:res animated:YES];
 }
 @end

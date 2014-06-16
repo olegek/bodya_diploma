@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A3BAD2194EEB6E00AC81FF /* navbarBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A3BAD1194EEB6E00AC81FF /* navbarBG.png */; };
+		00A3BAD4194EEB7500AC81FF /* navbarBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A3BAD3194EEB7500AC81FF /* navbarBG@2x.png */; };
+		00A3BAD7194EEF7A00AC81FF /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A3BAD5194EEF7A00AC81FF /* back.png */; };
+		00A3BAD8194EEF7A00AC81FF /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A3BAD6194EEF7A00AC81FF /* back@2x.png */; };
 		752D6A181949E1DC00C8F5A6 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D6A161949E1DC00C8F5A6 /* ResultViewController.m */; };
 		752D6A191949E1DC00C8F5A6 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 752D6A171949E1DC00C8F5A6 /* ResultViewController.xib */; };
 		752D6A2C194A001F00C8F5A6 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D6A2B194A001F00C8F5A6 /* NSString+Hash.m */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A3BAD1194EEB6E00AC81FF /* navbarBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbarBG.png; sourceTree = "<group>"; };
+		00A3BAD3194EEB7500AC81FF /* navbarBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbarBG@2x.png"; sourceTree = "<group>"; };
+		00A3BAD5194EEF7A00AC81FF /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		00A3BAD6194EEF7A00AC81FF /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		752D6A151949E1DC00C8F5A6 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		752D6A161949E1DC00C8F5A6 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		752D6A171949E1DC00C8F5A6 /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
@@ -59,7 +67,7 @@
 		759E3B6E1949C8260000CCD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		759E3B6F1949C8260000CCD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		759E3B711949C8260000CCD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		759E3B771949C8260000CCD0 /* BodyaTests */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BodyaTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		759E3B771949C8260000CCD0 /* BodyaTests */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = file; name = BodyaTests; path = BodyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E3B781949C8260000CCD0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		759E3B801949C8270000CCD0 /* BodyaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BodyaTests-Info.plist"; sourceTree = "<group>"; };
 		759E3B821949C8270000CCD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -96,6 +104,10 @@
 		752D6A291949FFED00C8F5A6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				00A3BAD1194EEB6E00AC81FF /* navbarBG.png */,
+				00A3BAD3194EEB7500AC81FF /* navbarBG@2x.png */,
+				00A3BAD5194EEF7A00AC81FF /* back.png */,
+				00A3BAD6194EEF7A00AC81FF /* back@2x.png */,
 				752D6A2D194A011D00C8F5A6 /* NSData+Hash.h */,
 				752D6A2E194A011D00C8F5A6 /* NSData+Hash.m */,
 				752D6A2F194A011D00C8F5A6 /* NSData+HexString.h */,
@@ -267,7 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				759E3B6A1949C8260000CCD0 /* InfoPlist.strings in Resources */,
+				00A3BAD8194EEF7A00AC81FF /* back@2x.png in Resources */,
+				00A3BAD4194EEB7500AC81FF /* navbarBG@2x.png in Resources */,
 				759E3B951949C8AC0000CCD0 /* MainViewController.xib in Resources */,
+				00A3BAD2194EEB6E00AC81FF /* navbarBG.png in Resources */,
+				00A3BAD7194EEF7A00AC81FF /* back.png in Resources */,
 				759E3B721949C8260000CCD0 /* Images.xcassets in Resources */,
 				752D6A191949E1DC00C8F5A6 /* ResultViewController.xib in Resources */,
 			);
@@ -416,7 +432,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bodya/Bodya-Prefix.pch";
 				INFOPLIST_FILE = "Bodya/Bodya-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,7 +448,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bodya/Bodya-Prefix.pch";
 				INFOPLIST_FILE = "Bodya/Bodya-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

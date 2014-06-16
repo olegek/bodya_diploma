@@ -10,6 +10,8 @@
 
 @interface ResultViewController : UIViewController
 
+
+@property (strong, nonatomic) NSString *hashMethod;
 - (id)initWithResult:(NSString *)result;
 
 @end
