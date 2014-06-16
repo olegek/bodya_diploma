@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752D6A181949E1DC00C8F5A6 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D6A161949E1DC00C8F5A6 /* ResultViewController.m */; };
+		752D6A191949E1DC00C8F5A6 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 752D6A171949E1DC00C8F5A6 /* ResultViewController.xib */; };
+		752D6A2C194A001F00C8F5A6 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D6A2B194A001F00C8F5A6 /* NSString+Hash.m */; };
+		752D6A31194A011D00C8F5A6 /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D6A2E194A011D00C8F5A6 /* NSData+Hash.m */; };
+		752D6A32194A011D00C8F5A6 /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D6A30194A011D00C8F5A6 /* NSData+HexString.m */; };
 		759E3B601949C8260000CCD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E3B5F1949C8260000CCD0 /* Foundation.framework */; };
 		759E3B621949C8260000CCD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E3B611949C8260000CCD0 /* CoreGraphics.framework */; };
 		759E3B641949C8260000CCD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E3B631949C8260000CCD0 /* UIKit.framework */; };
@@ -19,6 +24,8 @@
 		759E3B7B1949C8270000CCD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E3B631949C8260000CCD0 /* UIKit.framework */; };
 		759E3B831949C8270000CCD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 759E3B811949C8270000CCD0 /* InfoPlist.strings */; };
 		759E3B851949C8270000CCD0 /* BodyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 759E3B841949C8270000CCD0 /* BodyaTests.m */; };
+		759E3B941949C8AC0000CCD0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 759E3B921949C8AC0000CCD0 /* MainViewController.m */; };
+		759E3B951949C8AC0000CCD0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759E3B931949C8AC0000CCD0 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		752D6A151949E1DC00C8F5A6 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		752D6A161949E1DC00C8F5A6 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		752D6A171949E1DC00C8F5A6 /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		752D6A2A194A001F00C8F5A6 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		752D6A2B194A001F00C8F5A6 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		752D6A2D194A011D00C8F5A6 /* NSData+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hash.h"; sourceTree = "<group>"; };
+		752D6A2E194A011D00C8F5A6 /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hash.m"; sourceTree = "<group>"; };
+		752D6A2F194A011D00C8F5A6 /* NSData+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HexString.h"; sourceTree = "<group>"; };
+		752D6A30194A011D00C8F5A6 /* NSData+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexString.m"; sourceTree = "<group>"; };
 		759E3B5C1949C8260000CCD0 /* Bodya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bodya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E3B5F1949C8260000CCD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		759E3B611949C8260000CCD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,11 +59,14 @@
 		759E3B6E1949C8260000CCD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		759E3B6F1949C8260000CCD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		759E3B711949C8260000CCD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		759E3B771949C8260000CCD0 /* BodyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		759E3B771949C8260000CCD0 /* BodyaTests */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BodyaTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E3B781949C8260000CCD0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		759E3B801949C8270000CCD0 /* BodyaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BodyaTests-Info.plist"; sourceTree = "<group>"; };
 		759E3B821949C8270000CCD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		759E3B841949C8270000CCD0 /* BodyaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyaTests.m; sourceTree = "<group>"; };
+		759E3B911949C8AC0000CCD0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		759E3B921949C8AC0000CCD0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		759E3B931949C8AC0000CCD0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		752D6A291949FFED00C8F5A6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				752D6A2D194A011D00C8F5A6 /* NSData+Hash.h */,
+				752D6A2E194A011D00C8F5A6 /* NSData+Hash.m */,
+				752D6A2F194A011D00C8F5A6 /* NSData+HexString.h */,
+				752D6A30194A011D00C8F5A6 /* NSData+HexString.m */,
+				752D6A2A194A001F00C8F5A6 /* NSString+Hash.h */,
+				752D6A2B194A001F00C8F5A6 /* NSString+Hash.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		759E3B531949C8260000CCD0 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				759E3B5C1949C8260000CCD0 /* Bodya.app */,
-				759E3B771949C8260000CCD0 /* BodyaTests.xctest */,
+				759E3B771949C8260000CCD0 /* BodyaTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +139,8 @@
 		759E3B651949C8260000CCD0 /* Bodya */ = {
 			isa = PBXGroup;
 			children = (
+				752D6A291949FFED00C8F5A6 /* Categories */,
+				759E3B901949C8540000CCD0 /* ViewControllers */,
 				759E3B6E1949C8260000CCD0 /* AppDelegate.h */,
 				759E3B6F1949C8260000CCD0 /* AppDelegate.m */,
 				759E3B711949C8260000CCD0 /* Images.xcassets */,
@@ -144,6 +178,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		759E3B901949C8540000CCD0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				759E3B911949C8AC0000CCD0 /* MainViewController.h */,
+				759E3B921949C8AC0000CCD0 /* MainViewController.m */,
+				759E3B931949C8AC0000CCD0 /* MainViewController.xib */,
+				752D6A151949E1DC00C8F5A6 /* ResultViewController.h */,
+				752D6A161949E1DC00C8F5A6 /* ResultViewController.m */,
+				752D6A171949E1DC00C8F5A6 /* ResultViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,7 +226,7 @@
 			);
 			name = BodyaTests;
 			productName = BodyaTests;
-			productReference = 759E3B771949C8260000CCD0 /* BodyaTests.xctest */;
+			productReference = 759E3B771949C8260000CCD0 /* BodyaTests */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				759E3B6A1949C8260000CCD0 /* InfoPlist.strings in Resources */,
+				759E3B951949C8AC0000CCD0 /* MainViewController.xib in Resources */,
 				759E3B721949C8260000CCD0 /* Images.xcassets in Resources */,
+				752D6A191949E1DC00C8F5A6 /* ResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				759E3B701949C8260000CCD0 /* AppDelegate.m in Sources */,
+				752D6A2C194A001F00C8F5A6 /* NSString+Hash.m in Sources */,
+				752D6A31194A011D00C8F5A6 /* NSData+Hash.m in Sources */,
+				759E3B941949C8AC0000CCD0 /* MainViewController.m in Sources */,
 				759E3B6C1949C8260000CCD0 /* main.m in Sources */,
+				752D6A181949E1DC00C8F5A6 /* ResultViewController.m in Sources */,
+				752D6A32194A011D00C8F5A6 /* NSData+HexString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +416,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bodya/Bodya-Prefix.pch";
 				INFOPLIST_FILE = "Bodya/Bodya-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -375,7 +432,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bodya/Bodya-Prefix.pch";
 				INFOPLIST_FILE = "Bodya/Bodya-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -396,6 +456,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "BodyaTests/BodyaTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -414,6 +475,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bodya/Bodya-Prefix.pch";
 				INFOPLIST_FILE = "BodyaTests/BodyaTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -439,6 +501,7 @@
 				759E3B8A1949C8270000CCD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		759E3B8B1949C8270000CCD0 /* Build configuration list for PBXNativeTarget "BodyaTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +510,7 @@
 				759E3B8D1949C8270000CCD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ResultViewController.h
 //  Bodya
 //
 //  Created by Hedgehog on 12.06.14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface ResultViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+- (id)initWithResult:(NSString *)result;
 
 @end
